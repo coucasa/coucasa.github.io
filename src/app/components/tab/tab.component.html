@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="list" fxLayout="column nowrap" fxLayoutGap="16px" fxLayoutAlign="center">
+        <mat-card *ngFor="let app of apps">
+            <div class="mat-card-header" *ngIf="app.background" [style.background-color]="app.background">
+                <img src="{{'assets/' + app.logo}}" height="45px" />
+            </div>
+            <div class="mat-card-header" *ngIf="!app.background">
+                <img src="{{'assets/' + app.logo}}" height="45px" />
+            </div>
+            <mat-card-content>
+                <p>{{app.key + '.description' | translate}}</p>
+                <p *ngIf="app.refer">{{app.key + '.refer' | translate}}</p>
+            </mat-card-content>
+            <mat-card-actions align="end">
+                <a *ngIf="app.register" mat-raised-button color="accent" aria-label="register" href="{{app.register}}"
+                    target="_blank">
+                    Registrieren
+                </a>
+                <ng-container [ngSwitch]="platform">
+                    <a mat-raised-button *ngIf="platform.IOS" color="accent" aria-label="open" href="{{app.ios}}"
+                        target="_blank">
+                        iOS App öffnen
+                    </a>
+                    <a mat-raised-button *ngIf="platform.ANDROID" color="accent" aria-label="open"
+                        href="{{app.android}}" target="_blank">
+                        Android App öffnen
+                    </a>
+                    <a mat-raised-button color="accent" aria-label="open"
+                        href="{{app.web}}" target="_blank">
+                        Webseite öffnen
+                    </a>
+                </ng-container>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
