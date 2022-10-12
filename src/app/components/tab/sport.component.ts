@@ -1,6 +1,5 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component, } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { TabComponent } from './tab.component';
 
 @Component({
@@ -9,8 +8,8 @@ import { TabComponent } from './tab.component';
   styleUrls: ['./tab.component.scss']
 })
 export class SportComponent extends TabComponent {
-  constructor(translate: TranslateService, platform: Platform) {
-    super(translate, platform);
+  constructor(platform: Platform) {
+    super(platform);
     this.apps = [{
       key: 'sweatcoin',
       background: '#5f3aae',

@@ -18,7 +18,6 @@
           <a mat-tab-link #rla="routerLinkActive" *ngFor="let category of categories" [routerLink]="category.link"
             routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [active]="rla.isActive" fxFlex>
             <mat-icon>{{category.icon}}</mat-icon>
-            <span fxShow fxHide.lt-md>{{'categories.' + category.key | translate}}</span>
           </a>
         </nav>
       </mat-toolbar-row>
@@ -29,7 +28,7 @@
     <footer>
       <mat-toolbar>
         <div fxShow fxHide.lt-sm fxFlex fxLayoutAlign="center center" class="mat-small">
-          Mit <mat-icon>favorite</mat-icon> gemacht
+          Mit <mat-icon color="accent">favorite</mat-icon> gemacht
         </div>
         <nav mat-tab-nav-bar fxHide fxShow.lt-sm fxFlex>
           <a mat-tab-link #rla="routerLinkActive" *ngFor="let category of categories" [routerLink]="category.link"

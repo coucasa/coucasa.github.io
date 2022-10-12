@@ -8,8 +8,8 @@
                 <img src="{{'assets/' + app.logo}}" height="45px" />
             </div>
             <mat-card-content>
-                <p>{{app.key + '.description' | translate}}</p>
-                <p *ngIf="app.refer">{{app.key + '.refer' | translate}}</p>
+                <p>{{'cards.' + app.key + '.description' | translate}}</p>
+                <p *ngIf="app.refer">{{'cards.' + app.key + '.refer' | translate}}</p>
             </mat-card-content>
             <mat-card-actions align="end">
                 <a *ngIf="app.register" mat-raised-button color="accent" aria-label="register" href="{{app.register}}"

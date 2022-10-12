@@ -1,6 +1,5 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 export interface App {
   key: string,
@@ -21,6 +20,6 @@ export class TabComponent {
 
   apps: App[] = [];
 
-  constructor(public translate: TranslateService, public platform: Platform) {}
+  constructor(public platform: Platform) {}
 
 }
