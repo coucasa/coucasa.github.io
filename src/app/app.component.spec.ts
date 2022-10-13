@@ -1,9 +1,40 @@
+import { Injectable, Pipe, PipeTransform } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { of } from 'rxjs';
 import { AppComponent } from './app.component';
-import { TranslateMockService } from './services/translate-mock.service';
+
+@Pipe({
+  name: 'translate'
+})
+export class TranslatePipeMock implements PipeTransform {
+  public name = 'translate';
+
+  public transform(query: string, ...args: any[]): any {
+    return query;
+  }
+}
+
+@Injectable()
+export class TranslateServiceStub {
+  public get(key: any): any {
+    return of(key);
+  }
+
+  public addLangs(langs: string[]) {
+
+  }
+
+  public setDefaultLang(lang: string) {
+
+  }
+
+  public use(lang: string) {
+
+  }
+}
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -15,7 +46,8 @@ describe('AppComponent', () => {
         AppComponent
       ],
       providers: [
-        {provide: TranslateService, useClass: TranslateMockService}
+        { provide: TranslateService, useClass: TranslateServiceStub },
+        { provide: TranslatePipe, useClass: TranslatePipeMock }
       ]
     }).compileComponents();
   });

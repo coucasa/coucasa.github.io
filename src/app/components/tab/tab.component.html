@@ -1,36 +1,33 @@
-<div class="container">
-    <div class="list" fxLayout="column nowrap" fxLayoutGap="16px" fxLayoutAlign="center">
-        <mat-card *ngFor="let app of apps">
-            <div class="mat-card-header" *ngIf="app.background" [style.background-color]="app.background">
-                <img src="{{'assets/' + app.logo}}" height="45px" />
+<div class="container tab">
+    <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
+        [style.margin]="gutter + 'px ' + gutter + 'px ' + gutter + 'px ' + gutter + 'px'">
+        <mat-grid-tile *ngFor="let item of items">
+            <mat-grid-tile-header [style.background]="item.background? item.background : 'none'">
+                <img src="{{'assets/' + item.logo}}" height="45px" />
+            </mat-grid-tile-header>
+            <div class="mat-grid-tile-text">
+                <p>{{'items.' + item.key + '.description' | translate}}</p>
+                <p *ngIf="item.refer">{{'items.' + item.key + '.refer' | translate}}</p>
+                <mat-grid-tile-footer>
+                    <a *ngIf="item.register" mat-raised-button color="accent" aria-label="register"
+                        href="{{item.register}}" target="_blank">
+                        Registrieren
+                    </a>
+                    <ng-container [ngSwitch]="platform">
+                        <a mat-raised-button *ngIf="platform.IOS" color="accent" aria-label="open" href="{{item.ios}}"
+                            target="_blank">
+                            iOS App öffnen
+                        </a>
+                        <a mat-raised-button *ngIf="platform.ANDROID" color="accent" aria-label="open"
+                            href="{{item.android}}" target="_blank">
+                            Android App öffnen
+                        </a>
+                        <a mat-raised-button color="accent" aria-label="open" href="{{item.web}}" target="_blank">
+                            Webseite öffnen
+                        </a>
+                    </ng-container>
+                </mat-grid-tile-footer>
             </div>
-            <div class="mat-card-header" *ngIf="!app.background">
-                <img src="{{'assets/' + app.logo}}" height="45px" />
-            </div>
-            <mat-card-content>
-                <p>{{'cards.' + app.key + '.description' | translate}}</p>
-                <p *ngIf="app.refer">{{'cards.' + app.key + '.refer' | translate}}</p>
-            </mat-card-content>
-            <mat-card-actions align="end">
-                <a *ngIf="app.register" mat-raised-button color="accent" aria-label="register" href="{{app.register}}"
-                    target="_blank">
-                    Registrieren
-                </a>
-                <ng-container [ngSwitch]="platform">
-                    <a mat-raised-button *ngIf="platform.IOS" color="accent" aria-label="open" href="{{app.ios}}"
-                        target="_blank">
-                        iOS App öffnen
-                    </a>
-                    <a mat-raised-button *ngIf="platform.ANDROID" color="accent" aria-label="open"
-                        href="{{app.android}}" target="_blank">
-                        Android App öffnen
-                    </a>
-                    <a mat-raised-button color="accent" aria-label="open"
-                        href="{{app.web}}" target="_blank">
-                        Webseite öffnen
-                    </a>
-                </ng-container>
-            </mat-card-actions>
-        </mat-card>
-    </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

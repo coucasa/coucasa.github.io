@@ -2,24 +2,6 @@ header div {
     text-align: center;
 }
 
-@media (max-width: 599px) {
-    .mat-grid-list {
-        margin: 16px 16px 16px 16px;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1279px) {
-    .mat-grid-list {
-        margin: 32px 32px 32px 32px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .mat-grid-list {
-        margin: 48px 48px 48px 48px;
-    }
-}
-
 .container {
     height: 100%;
     overflow-y: auto;

@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -15,9 +14,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 import { AppComponent } from './app.component';
-import { CashbackComponent } from './components/tab/cashback.component';
-import { StoreComponent } from './components/tab/store.component';
-import { SportComponent } from './components/tab/sport.component';
 import { TabComponent } from './components/tab/tab.component';
 import { HomeComponent } from './components/home/home.component';
 
@@ -34,9 +30,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     TabComponent,
-    CashbackComponent,
-    StoreComponent,
-    SportComponent,
     HomeComponent
   ],
   imports: [
@@ -53,7 +46,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatButtonModule,
-    MatCardModule,
     MatGridListModule,
     MatIconModule,
     MatSlideToggleModule,

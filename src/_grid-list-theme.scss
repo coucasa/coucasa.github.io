@@ -1,0 +1,38 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin color($theme) {
+  $config: mat.get-color-config($theme);
+  $foreground: map.get($config, foreground);
+  $background: map.get($config, background);
+
+  mat-grid-tile {
+    background: mat.get-color-from-palette($background, app-bar);
+  }
+
+  .home .mat-grid-tile .mat-grid-tile-header,
+  .home .mat-grid-tile .mat-grid-tile-footer {
+    background: rgba(0, 0, 0, .1);
+    color: mat.get-color-from-palette($foreground, text);
+  }
+
+  .tab .mat-grid-tile .mat-grid-tile-header,
+  .tab .mat-grid-tile .mat-grid-tile-footer {
+    background: rgba(0, 0, 0, .1);
+    color: mat.get-color-from-palette($foreground, text);
+  }
+
+  .tab .mat-grid-tile .mat-grid-tile-header,
+  .tab .mat-grid-tile .mat-grid-tile-footer {
+    background: none;
+    color: mat.get-color-from-palette($foreground, text);
+  }
+}
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+
+  @if $color-config  !=null {
+    @include color($theme);
+  }
+}

@@ -1,25 +1,41 @@
 import { Platform } from '@angular/cdk/platform';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Item } from 'src/app/models/item';
 
-export interface App {
-  key: string,
-  background?: string,
-  logo: string,
-  refer: boolean,
-  register?: string,
-  web: string,
-  android: string,
-  ios: string
-}
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.scss']
 })
-export class TabComponent {
+export class TabComponent implements OnInit {
 
-  apps: App[] = [];
+  private el: HTMLElement;
 
-  constructor(public platform: Platform) {}
+  items: Item[] = [];
+  cols: number = 1;
+  gutter: number = 16;
+  rowHeight: number = 250;
+
+  constructor(el: ElementRef, router: Router, public platform: Platform) {
+    this.el = el.nativeElement;
+    if (router.url.length > 1) {
+      this.items = require("." + router.url + ".json");
+    }
+  }
+
+  ngOnInit(): void {
+    this.resize();
+  }
+
+  @HostListener('window:resize', ['$event.target'])
+  onResize(): void {
+    this.resize();
+  }
+
+  private resize(): void {
+    this.cols = 1 + Math.floor(this.el.offsetWidth / 800);
+    this.gutter = 16 * this.cols;
+  }
 
 }

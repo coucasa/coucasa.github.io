@@ -1,4 +1,6 @@
 {
+    "title": "CouCaSa",
+    "subtitle": "Couponing, Cashback und Samples",
     "categories": {
         "home": {
             "label": "",
@@ -33,22 +35,24 @@
             "description": "Lass dich für Schritte oder Trainings belohnen."
         }
     },
-    "cards": {
+    "items": {
         "rewe": {
             "description": "In der REWE App findest du aktuelle Angebote, alle Infos zu deinem REWE Supermarkt, wie z.B. Öffnungszeiten und kannst eine Einkaufsliste erstellen! REWE App Coupons, Punkten mit PAYBACK, Bestellen im REWE Onlineshop, REWE Vorteilskarte."
         },
         "couponplatz": {
-            "description": "Online Coupons drucken, Cashback-Deals einlösen und an tollen Gewinnspielen teilnehmen. couponplatz machts möglich!"
+            "description": "couponplatz in der Tasche: Lade Dir jetzt die kostenlose couponplatz App herunter und spare noch mehr bei Deinem täglichen Einkauf!",
+            "keywords": "Coupon,Coupons,Rabatt,Sparen,Angebot"
         },
         "marktguru": {
-            "description": "Aktuelle Prospekte, Angebote und Rabatte von Geschäften, sowie Öffnungszeiten und exklusive Cashback Deals.",
+            "description": "marktguru.de - Aktuelle Prospekte, Angebote und Rabatte von Geschäften, sowie Öffnungszeiten und exklusive Cashback Deals.",
             "refer": "Mit dem code friend2o1i066 erhältst du € 1 Startguthaben."
         },
         "scondoo": {
-            "description": "Cashback, Coupons und Angebote."
+            "description": "Cashback, Coupons und Angebote. ",
+            "keywords": "Coupon,Coupons,Rabatt,Sparen,Angebot,Cineplex,Kaufland,CinemaxX,EDEKA,Kinopolis,CineStar,UCI,CINECITTA,Herkules,REWE,REWE Center,Traumpalast,REWE - Ihr kaufpark,dm,mathäser,Müller,Globus,Marktkauf,Dersa Kino,HIT,Rossmann,PENNY,BUDNI,famila,famila Kiel,Combi,Wasgau,Apotheke,tegut,NP-Markt,Diska,AEZ,multi,V-Markt,Klaas + Kock,aktiv & irma,akzenta,CITTI,Markant,DroNova,Elli,Thalia Kino Berlin,trinkgut,Woolworth"
         },
         "smhaggle": {
-            "description": "Finde die besten Preise für deine Produkte und zahle beim Einkaufen im Supermarkt nie wieder zu viel. Einkaufs­zettel, Händler­wahl, Preis­entwicklung, Angebote, Cashback."
+            "description": "Finde die besten Preise für deine Produkte"
         },
         "sweatcoin": {
             "description": "Schließe dich unseren über 100 Mio. Nutzern an und werde Teil der Movement-Ökonomie. Die Sweatcoin-App wandelt deine Schritte in Sweatcoins um – eine virtuelle Währung, die du für Produkte und Dienstleistungen ausgeben kannst. Laufen lohnt sich!"
@@ -56,6 +60,16 @@
         "weward": {
             "description": "Melde dich bei WeWard an und mache den ersten Schritt zu mehr Wohlbefinden! Fördere deine Gesundheit, schone den Planeten und lerne unsere Partner beim Gehen kennen.",
             "refer": "Starte mit 300 Wards direkt auf deinem Konto, dank des Freundschaftswerbungscode: NADE-9DJ+G Du hast 48 Stunden Zeit, um ihn einzulösen, sobald dein Konto eingerichtet ist."
+        },
+        "edeka": {
+            "description": "Mit jedem Einkauf Punkte sammeln, von tollen Coupons und Gutscheinen profitieren und immer informiert bleiben: Das ist die neue EDEKA App!"
+        },
+        "lidl": {
+            "description": "Die Lidl Plus App - Deine digitale Kundenkarte. Jetzt runterladen, registrieren und viele Vorteile sichern! Coupons, Sofortgewinne nach jedem Einkauf, Rabattsammler, Digitaler Kassenbon, Digitaler Prospekt und vieles mehr.\n"
+        },
+        "penny": {
+            "description": "Mit der PENNY App gemeinsam den Einkauf planen ✓ Keine Angebote mehr verpassen ✓ Exklusive Vorteile genießen » Hier informieren & direkt herunterladen!",
+            "keywords": "Penny App, Penny Einkaufsliste, Penny Coupons, Penny Angebote, Penny Mobil"
         }
     }
 }

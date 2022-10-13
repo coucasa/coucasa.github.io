@@ -1,28 +1,13 @@
-<div class="container">
+<div class="container home">
     <header>
         <div>
-            <h1>CouCaSa</h1>
-            <h2>Couponing, Cashback und Samples</h2>
+            <h1>{{'title' | translate}}</h1>
+            <h2>{{'subtitle' | translate}}</h2>
         </div>
     </header>
-    <div #gridView>
-        <div fxHide fxShow.lt-md>
-            <ng-template *ngTemplateOutlet="tilesTemplate; context: {col: 1, gutter: '16px'}">
-            </ng-template>
-        </div>
-        <div fxHide fxShow.md>
-            <ng-template *ngTemplateOutlet="tilesTemplate; context: {col: 2, gutter: '32px'}">
-            </ng-template>
-        </div>
-        <div fxShow fxHide.lt-lg>
-            <ng-template *ngTemplateOutlet="tilesTemplate; context: {col: 3, gutter: '48px'}">
-            </ng-template>
-        </div>
-    </div>
-</div>
-<ng-template #tilesTemplate let-col="col" let-gutter="gutter">
-    <mat-grid-list [cols]="col" [gutterSize]="gutter" rowHeight="200px">
-        <mat-grid-tile *ngFor="let category of categories" [style.background]="category.color">
+    <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
+        [style.margin]="gutter + 'px ' + gutter + 'px ' + gutter + 'px ' + gutter + 'px'">
+        <mat-grid-tile *ngFor="let category of categories">
             <mat-grid-tile-header>
                 <mat-icon>{{category.icon}}</mat-icon><span>{{'categories.' + category.key + '.label' |
                     translate}}</span>
@@ -30,4 +15,4 @@
             <p class="mat-grid-tile-text">{{'categories.' + category.key + '.description' | translate}}</p>
         </mat-grid-tile>
     </mat-grid-list>
-</ng-template>
+</div>
