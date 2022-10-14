@@ -1,4 +1,3 @@
-import { Platform } from '@angular/cdk/platform';
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Item } from 'src/app/models/item';
@@ -17,7 +16,7 @@ export class TabComponent implements OnInit {
   gutter: number = 16;
   rowHeight: number = 250;
 
-  constructor(el: ElementRef, router: Router, public platform: Platform) {
+  constructor(el: ElementRef, router: Router) {
     this.el = el.nativeElement;
     if (router.url.length > 1) {
       this.items = require("." + router.url + ".json");
@@ -34,7 +33,7 @@ export class TabComponent implements OnInit {
   }
 
   private resize(): void {
-    this.cols = 1 + Math.floor(this.el.offsetWidth / 800);
+    this.cols = Math.max(1, Math.floor(this.el.offsetWidth / 600));
     this.gutter = 16 * this.cols;
   }
 

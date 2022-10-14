@@ -1,0 +1,24 @@
+[
+    {
+        "key": "htc",
+        "webId": "https://www.hometesterclub.com/de/de"
+    },
+    {
+        "key": "influenster",
+        "playStoreId": "com.influenster",
+        "appStoreId": "influenster-reviews-deals/id917701230",
+        "register": "https://www.influenster.com/r/9910598",
+        "webId": "https://www.influenster.com/"
+    },
+    {
+        "key": "sampleo",
+        "playStoreId": "com.sampleo",
+        "appStoreId": "sampleo/id1186287708",
+        "webId": "https://www.sampleo.com/de/"
+    },
+    {
+        "key": "trnd",
+        "register": "https://www.trnd.com/de/recommend/ecdd28fe341c08415c2c5b4e9d923aed",
+        "webId": "https://www.trnd.com/de/"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "key": "deutschlandcard",
+        "playStoreId": "de.deutschlandcard.app",
+        "appStoreId": "deutschlandcard-app/id1032782737",
+        "webId": "https://www.deutschlandcard.de/informieren/app"
+    },
+    {
+        "key": "payback",
+        "playStoreId": "de.payback.client.android",
+        "appStoreId": "payback-karte-und-coupons/id363126964",
+        "register": "https://www.payback.de/anmelden/freunde-werben?mgm-ref=029d3d25-58e1-4b2a-b912-d39181315d5f&excid=mgm&incid=mgm",
+        "webId": "https://www.payback.de/app"
+    }
+]

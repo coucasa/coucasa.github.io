@@ -1,20 +1,22 @@
 [
     {
+        "key": "stepler",
+        "playStoreId": "com.stepler",
+        "appStoreId": "stepler-lauf-werde-belohnt/id1451006880",
+        "webId": "https://www.steplerapp.com/de"
+    },
+    {
         "key": "sweatcoin",
-        "logo": "sweatcoin_logo.png",
-        "background": "#5f3aae",
-        "refer": false,
-        "web": "https://sweatco.in/i/ngmg_82",
-        "android": "https://sweatco.in/i/ngmg_82",
-        "ios": "https://sweatco.in/i/ngmg_82"
+        "playStoreId": "in.sweatco.app",
+        "appStoreId": "sweatcoin-schritte-zählen/id971023427",
+        "register": "https://sweatco.in/i/ngmg_82",
+        "webId": "https://sweatco.in/"
     },
     {
         "key": "weward",
-        "logo": "weward_logo.png",
-        "background": "#ffffff",
-        "refer": true,
-        "web": "https://weward.page.link/invite",
-        "android": "https://play.google.com/store/apps/details?id=com.weward",
-        "ios": "https://itunes.apple.com/fr/app/weward-gagnez-en-marchant/id1454213029?l=en&mt=8&ign-mpt=uo2"
+        "playStoreId": "com.weward",
+        "appStoreId": "weward/id1454213029",
+        "webId": "https://de.weward.fr/",
+        "ref": true
     }
 ]

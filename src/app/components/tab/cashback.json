@@ -1,34 +1,33 @@
-[{
-    "key": "couponplatz",
-    "logo": "couponplatz_logo.svg",
-    "background": "#ffffff",
-    "refer": false,
-    "web": "https://couponplatz.de/app",
-    "android": "",
-    "ios": ""
-  }, {
-    "key": "marktguru",
-    "background": "#08aae7",
-    "logo": "marktguru_logo.svg",
-    "refer": true,
-    "register": "https://marktguru.de/einladen/friend2o1i066",
-    "web": "https://marktguru.de",
-    "android": "https://app.adjust.com/8drzqq8?engagement_type=fallback_click&fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.marktguru.mg2.de",
-    "ios": "https://app.adjust.com/a6fkkr8?engagement_type=fallback_click&fallback=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fid1064025602%3Fmt%3D8"
-  }, {
-    "key": "scondoo",
-    "logo": "scondoo_logo.svg",
-    "background": "#ffffff",
-    "refer": false,
-    "web": "https://scondoo.de/",
-    "android": "",
-    "ios": ""
-  }, {
-    "key": "smhaggle",
-    "logo": "smhaggle_logo.svg",
-    "background": "#ffffff",
-    "refer": false,
-    "web": "https://smhaggle.com",
-    "android": "",
-    "ios": ""
-  }]
+[
+    {
+        "key": "couponplatz",
+        "playStoreId": "de.arcado.couponplatz",
+        "appStoreId": "couponplatz/id1517558961",
+        "webId": "https://couponplatz.de/app"
+    },
+    {
+        "key": "marktguru",
+        "playStoreId": "com.marktguru.mg2.de",
+        "appStoreId": "marktguru-prospekte-angebote/id1064025602",
+        "webId": "https://marktguru.de",
+        "ref": true
+    },
+    {
+        "key": "scondoo",
+        "playStoreId": "de.scondoo.android",
+        "appStoreId": "scondoo-cashback-app/id592386187",
+        "webId": "https://scondoo.de/"
+    },
+    {
+        "key": "reebate",
+        "playStoreId": "biz.reebate.android",
+        "appStoreId": "reebate/id1165029559",
+        "webId": "https://reebate.de/"
+    },
+    {
+        "key": "smhaggle",
+        "playStoreId": "com.smhaggle.app",
+        "appStoreId": "smhaggle/id1459848206",
+        "webId": "https://smhaggle.com"
+    }
+]

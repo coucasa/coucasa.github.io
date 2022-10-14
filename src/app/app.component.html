@@ -8,9 +8,13 @@
             CouCaSa
           </span>
         </div>
-        <div fxFlex fxLayoutAlign="flex-end center">
-          <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">Dunkel-Modus
+        <div fxFlex fxLayoutAlign="center center">
+          <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)"><mat-icon>contrast</mat-icon>
           </mat-slide-toggle>
+        </div>
+        <div fxFlex fxLayoutAlign="flex-end center">
+          <a *ngIf="!(isDarkTheme| async)" href="https://github.com/coucasa/dashboard"><img src="assets/GitHub-Mark-32px.png" height="24px" /></a>
+          <a *ngIf="isDarkTheme | async" href="https://github.com/coucasa/dashboard"><img src="assets/GitHub-Mark-Light-32px.png" height="24px" /></a>
         </div>
       </mat-toolbar-row>
       <mat-toolbar-row fxShow fxHide.lt-sm fxFlex>

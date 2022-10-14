@@ -2,32 +2,32 @@
     <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
         [style.margin]="gutter + 'px ' + gutter + 'px ' + gutter + 'px ' + gutter + 'px'">
         <mat-grid-tile *ngFor="let item of items">
-            <mat-grid-tile-header [style.background]="item.background? item.background : 'none'">
-                <img src="{{'assets/' + item.logo}}" height="45px" />
+            <mat-grid-tile-header>
+                <img src="{{'items.' + item.key + '.image' | translate}}" height="48px" />
+                <span>{{'items.' + item.key + '.og:title' | translate}}</span>
             </mat-grid-tile-header>
             <div class="mat-grid-tile-text">
                 <p>{{'items.' + item.key + '.description' | translate}}</p>
-                <p *ngIf="item.refer">{{'items.' + item.key + '.refer' | translate}}</p>
-                <mat-grid-tile-footer>
-                    <a *ngIf="item.register" mat-raised-button color="accent" aria-label="register"
-                        href="{{item.register}}" target="_blank">
-                        Registrieren
-                    </a>
-                    <ng-container [ngSwitch]="platform">
-                        <a mat-raised-button *ngIf="platform.IOS" color="accent" aria-label="open" href="{{item.ios}}"
-                            target="_blank">
-                            iOS App öffnen
-                        </a>
-                        <a mat-raised-button *ngIf="platform.ANDROID" color="accent" aria-label="open"
-                            href="{{item.android}}" target="_blank">
-                            Android App öffnen
-                        </a>
-                        <a mat-raised-button color="accent" aria-label="open" href="{{item.web}}" target="_blank">
-                            Webseite öffnen
-                        </a>
-                    </ng-container>
-                </mat-grid-tile-footer>
+                <p *ngIf="item.ref">{{'items.' + item.key + '.refer' | translate}}</p>
             </div>
+            <mat-grid-tile-footer>
+                <a *ngIf="item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.register}}" target="_blank">
+                    Webseite
+                </a>
+                <a *ngIf="!item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.web}}" target="_blank">
+                    Webseite
+                </a>
+                <a color="accent" class="apple" aria-label="open in app store"
+                    href="https://apps.apple.com/de/app/{{item.appStoreId}}">
+                    <div class="store"><span>App Store</span></div>
+                    <div class="ratings">{{'items.' + item.key + '.appStore.rating' | translate}}</div>
+                </a>
+                <a color="accent" class="play" aria-label="open in playstore"
+                    href="https://play.google.com/store/apps/details?id={{item.playStoreId}}&hl=de&gl=DE">
+                    <div class="store"><span>Google Play</span></div>
+                    <div class="ratings">{{'items.' + item.key + '.playStore.rating' | translate}}</div>
+                </a>
+            </mat-grid-tile-footer>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
