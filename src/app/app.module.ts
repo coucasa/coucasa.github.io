@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
+    MatTooltipModule,
     HttpClientModule
   ],
   providers: [],

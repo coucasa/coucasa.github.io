@@ -1,7 +1,7 @@
 export interface Item {
   key: string,
   register?: string,
-  web: string,
+  webId: string,
   playStoreId?: string,
   appStoreId?: string,
   ref?: boolean

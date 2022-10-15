@@ -1,10 +1,10 @@
 <div class="container tab">
     <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
-        [style.margin]="gutter + 'px ' + gutter + 'px ' + gutter + 'px ' + gutter + 'px'">
+        [style.margin]="gutter + 'px ' + margin + 'px ' + gutter + 'px ' + margin + 'px'">
         <mat-grid-tile *ngFor="let item of items">
             <mat-grid-tile-header>
                 <img src="{{'items.' + item.key + '.image' | translate}}" height="48px" />
-                <span>{{'items.' + item.key + '.og:title' | translate}}</span>
+                <span>{{'items.' + item.key + '.title' | translate}}</span>
             </mat-grid-tile-header>
             <div class="mat-grid-tile-text">
                 <p>{{'items.' + item.key + '.description' | translate}}</p>
@@ -14,16 +14,16 @@
                 <a *ngIf="item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.register}}" target="_blank">
                     Webseite
                 </a>
-                <a *ngIf="!item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.web}}" target="_blank">
+                <a *ngIf="!item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.webId}}" target="_blank">
                     Webseite
                 </a>
-                <a color="accent" class="apple" aria-label="open in app store"
-                    href="https://apps.apple.com/de/app/{{item.appStoreId}}">
+                <a *ngIf="item.appStoreId" color="accent" class="apple" aria-label="open in app store"
+                    href="{{'items.' + item.key + '.appStore.url' | translate}}">
                     <div class="store"><span>App Store</span></div>
                     <div class="ratings">{{'items.' + item.key + '.appStore.rating' | translate}}</div>
                 </a>
-                <a color="accent" class="play" aria-label="open in playstore"
-                    href="https://play.google.com/store/apps/details?id={{item.playStoreId}}&hl=de&gl=DE">
+                <a *ngIf="item.playStoreId" color="accent" class="play" aria-label="open in playstore"
+                    href="{{'items.' + item.key + '.playStore.url' | translate}}">
                     <div class="store"><span>Google Play</span></div>
                     <div class="ratings">{{'items.' + item.key + '.playStore.rating' | translate}}</div>
                 </a>
