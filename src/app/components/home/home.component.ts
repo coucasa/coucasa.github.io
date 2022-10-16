@@ -17,4 +17,12 @@ export class HomeComponent extends ResizeableComponent {
     this.categories = categoryService.getCategories();
   }
 
+  getTileWidth(): number {
+    return 300;
+  }
+
+  getRowHeight(): number {
+    return 200;
+  }
+
 }

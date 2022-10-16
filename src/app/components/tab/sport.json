@@ -1,5 +1,16 @@
 [
     {
+        "key": "hellosports",
+        "playStoreId": "app.hellosports",
+        "appStoreId": "hellosports/id1557856534",
+        "webId": "https://www.hellosports.app/"
+    }, {
+        "key": "running",
+        "playStoreId": "com.runtastic.android",
+        "appStoreId": "adidas-running-app-runtastic/id336599882",
+        "webId": "https://www.runtastic.com/challenges/runtastic/rfto21"
+    },
+    {
         "key": "stepler",
         "playStoreId": "com.stepler",
         "appStoreId": "stepler-lauf-werde-belohnt/id1451006880",

@@ -10,11 +10,21 @@ import { ResizeableComponent } from '../resizeable/resizeable.component';
 })
 export class TabComponent extends ResizeableComponent {
 
+  key: string = '';
   items: Item[] = [];
 
   constructor(el: ElementRef, router: Router) {
     super(el);
-    this.items = require("." + router.url + ".json");
+    this.key = router.url.substring(1);
+    this.items = require("./" + this.key + ".json");
+  }
+
+  getTileWidth(): number {
+    return 400;
+  }
+
+  getRowHeight(): number {
+    return 300;
   }
 
 }

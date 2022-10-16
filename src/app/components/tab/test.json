@@ -1,5 +1,9 @@
 [
     {
+        "key": "dmprodukttester",
+        "webId": "https://produkttester.dm.de/"
+    },
+    {
         "key": "htc",
         "webId": "https://www.hometesterclub.com/de/de"
     },
@@ -13,6 +17,10 @@
         "appStoreId": "influenster-reviews-deals/id917701230",
         "register": "https://www.influenster.com/r/9910598",
         "webId": "https://www.influenster.com/"
+    },
+    {
+        "key": "reweprodukttests",
+        "webId": "https://produkttests.rewe.de/"
     },
     {
         "key": "sampleo",

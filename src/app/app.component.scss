@@ -10,11 +10,18 @@
     }
 }
 
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
     z-index: 9;
+
     div .mat-icon {
         font-size: 12px;
         width: 12px;

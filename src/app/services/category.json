@@ -20,6 +20,11 @@
         "icon": "science"
     },
     {
+        "key": "sample",
+        "link": "sample",
+        "icon": "auto_awesome"
+    },
+    {
         "key": "survey",
         "link": "survey",
         "icon": "poll"

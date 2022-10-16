@@ -57,9 +57,16 @@ async function updatePlayProperties(driver, data) {
 
 async function updateWebsiteProperties(driver, data) {
   await updateProperties(driver, data);
+  let icons = await driver.findElements(By.xpath("//link[contains(@rel, 'icon')]"));
+  data["images"] = [];
+  for (let icon of icons) {
+    try {
+      data["images"].push(await icon.getAttribute('href'));
+    } catch (ex) {
+    }
+  }
   try {
-    let value = await driver.findElement(By.xpath("//link[contains(@rel, 'icon')]")).getAttribute('href');
-    data["image"] = value;
+    data["title"] = await driver.getTitle();
   } catch (ex) {
   }
 }
@@ -72,7 +79,7 @@ async function update() {
     { key: "web", getUrl: function (id) { return id }, updateProperties: updateWebsiteProperties }
   ];
   let data = [];
-  for (let category of require("./src/app/services/category.json")) {
+  for (let category of require("./src/app/services/category.json").slice(4, 5)) {
     let items = require("./src/app/components/tab/" + category.key + ".json");
     for (let item of items) {
       let d = { "key": item.key };
@@ -85,7 +92,7 @@ async function update() {
           let url = store.getUrl(storeId);
           let driver = await new Builder()
             .forBrowser("chrome")
-            .setChromeOptions(new chrome.Options().headless())
+            //.setChromeOptions(new chrome.Options().headless())
             .build();
 
           console.log(url);

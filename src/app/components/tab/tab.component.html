@@ -1,4 +1,10 @@
 <div class="container tab">
+    <header>
+        <div>
+            <h2>{{'categories.' + key + '.label' | translate}}</h2>
+            <p>{{'categories.' + key + '.description' | translate}}</p>
+        </div>
+    </header>
     <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
         [style.margin]="gutter + 'px ' + margin + 'px ' + gutter + 'px ' + margin + 'px'">
         <mat-grid-tile *ngFor="let item of items">
@@ -11,10 +17,12 @@
                 <p *ngIf="item.ref">{{'items.' + item.key + '.refer' | translate}}</p>
             </div>
             <mat-grid-tile-footer>
-                <a *ngIf="item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.register}}" target="_blank">
+                <a *ngIf="item.register" mat-raised-button color="accent" aria-label="open website"
+                    href="{{item.register}}" target="_blank">
                     Webseite
                 </a>
-                <a *ngIf="!item.register" mat-raised-button color="accent" aria-label="open website" href="{{item.webId}}" target="_blank">
+                <a *ngIf="!item.register" mat-raised-button color="accent" aria-label="open website"
+                    href="{{item.webId}}" target="_blank">
                     Webseite
                 </a>
                 <a *ngIf="item.appStoreId" color="accent" class="apple" aria-label="open in app store"

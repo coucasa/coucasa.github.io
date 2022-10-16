@@ -4,17 +4,18 @@ import { Router } from '@angular/router';
 @Component({
   template: ''
 })
-export class ResizeableComponent implements OnInit {
+export abstract class ResizeableComponent implements OnInit {
 
   private el: HTMLElement;
 
   cols: number = 1;
   gutter: number = 16;
   margin: number = 0;
-  rowHeight: number = 300;
+  rowHeight: number;
 
   constructor(el: ElementRef) {
     this.el = el.nativeElement;
+    this.rowHeight = this.getRowHeight();
   }
 
   ngOnInit(): void {
@@ -27,14 +28,16 @@ export class ResizeableComponent implements OnInit {
   }
 
   private resize(): void {
-    this.cols = Math.max(1, Math.floor(this.el.offsetWidth / 400));
+    this.cols = Math.max(1, Math.floor(this.el.offsetWidth / this.getTileWidth()));
     if (this.el.offsetWidth <= 600) {
-      this.gutter = 16;
       this.margin = 0;
     } else {
-      this.gutter = 32;
       this.margin = 16;
     }
   }
+
+  abstract getTileWidth(): number;
+
+  abstract getRowHeight(): number;
 
 }
