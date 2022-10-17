@@ -26,12 +26,12 @@
                     Webseite
                 </a>
                 <a *ngIf="item.appStoreId" color="accent" class="apple" aria-label="open in app store"
-                    href="{{'items.' + item.key + '.appStore.url' | translate}}">
+                    href="{{'items.' + item.key + '.appStore.url' | translate}}" target="_blank">
                     <div class="store"><span>App Store</span></div>
                     <div class="ratings">{{'items.' + item.key + '.appStore.rating' | translate}}</div>
                 </a>
                 <a *ngIf="item.playStoreId" color="accent" class="play" aria-label="open in playstore"
-                    href="{{'items.' + item.key + '.playStore.url' | translate}}">
+                    href="{{'items.' + item.key + '.playStore.url' | translate}}" target="_blank">
                     <div class="store"><span>Google Play</span></div>
                     <div class="ratings">{{'items.' + item.key + '.playStore.rating' | translate}}</div>
                 </a>

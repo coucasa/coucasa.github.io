@@ -1,5 +1,41 @@
 [
     {
+        "key": "checkforpet",
+        "web": {
+            "description": "Jetzt innerhalb 2-Min. 🔥 das passende und bestbewertete Futter finden. Über 721.842 Bewertungen inkl. passende Futterproben-Box 🦴",
+            "og:url": "https://www.checkforpet.de/futtercheck/",
+            "og:title": "Kostenloser Futtercheck für Hund & Katze - CheckForPet.de",
+            "og:description": "Jetzt innerhalb 2-Min. 🔥 das passende und bestbewertete Futter finden. Über 721.842 Bewertungen inkl. passende Futterproben-Box 🦴",
+            "og:image": "https://www.checkforpet.de/static/img/checkforpet-og-image.jpg",
+            "images": [
+                "https://www.checkforpet.de/static/img/favicon.png"
+            ],
+            "title": "Kostenloser Futtercheck für Hund & Katze - CheckForPet.de"
+        }
+    },
+    {
+        "key": "joseracat",
+        "web": {
+            "images": [
+                "https://www.josera-katzenfutter-probe.de/wp-content/uploads/2019/06/favicon.ico",
+                "https://www.josera-katzenfutter-probe.de/wp-content/uploads/2019/06/favicon.ico",
+                "https://www.josera-katzenfutter-probe.de/wp-content/uploads/2019/06/favicon.ico"
+            ],
+            "title": "JOSERA Katzenfutter Proben – Jetzt kostenlose Futterproben bestellen"
+        }
+    },
+    {
+        "key": "joseradog",
+        "web": {
+            "images": [
+                "https://www.josera-hundefutter-probe.de/wp-content/uploads/2019/06/favicon.ico",
+                "https://www.josera-hundefutter-probe.de/wp-content/uploads/2019/06/favicon.ico",
+                "https://www.josera-hundefutter-probe.de/wp-content/uploads/2019/06/favicon.ico"
+            ],
+            "title": "JOSERA Hundefutter Proben – Jetzt kostenlose Futterproben bestellen"
+        }
+    },
+    {
         "key": "sebamed",
         "web": {
             "og:title": "Formular",

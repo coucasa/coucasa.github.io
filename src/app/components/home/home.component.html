@@ -3,6 +3,10 @@
         <div>
             <h1>{{'title' | translate}}</h1>
             <h2>{{'subtitle' | translate}}</h2>
+            <p>{{'description' | translate}}</p>
+            <a mat-raised-button color="accent" href="https://m.facebook.com/groups/850752598298586">
+                <mat-icon>groups</mat-icon><span>Zur Gruppe</span>
+            </a>
         </div>
     </header>
     <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"

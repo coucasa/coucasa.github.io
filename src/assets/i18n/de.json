@@ -1,6 +1,7 @@
 {
     "title": "CouCaSa",
     "subtitle": "Couponing, Cashback und Samples",
+    "description": "Diese Seite entsteht dank des Inputs der Facebook Gruppe Couponing, gratis Proben, Cashback, Deals, Gezicke verboten!",
     "categories": {
         "store": {
             "label": "Geschäfte",
@@ -328,6 +329,21 @@
             "title": "sebamed",
             "image": "https://www.sebamed.de/typo3conf/ext/sebamed/Resources/Public/Images/touch_icons/android-icon-192x192.png",
             "description": "Probenanforderung über Formular mit Angabe eines Produktwunsches und aussagekräftiger Nachricht"
+        },
+        "checkforpet": {
+            "title": "Kostenloser Futtercheck für Hund & Katze - CheckForPet.de",
+            "image": "https://www.checkforpet.de/static/img/favicon.png",
+            "description": "Jetzt innerhalb 2-Min. 🔥 das passende und bestbewertete Futter finden. Über 721.842 Bewertungen inkl. passende Futterproben-Box 🦴"
+        },
+        "joseracat": {
+            "title": "JOSERA Katzenfutter Proben – Jetzt kostenlose Futterproben bestellen",
+            "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/b6/70/a4/b670a40c-cf75-61fd-d333-14fba9d100fa/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png",
+            "description": "Schnappen Sie sich zwei kostenlose Josera Katzenfutterproben und einen 5 €-Gutschein!"
+        },
+        "joseradog": {
+            "title": "JOSERA Hundefutter Proben – Jetzt kostenlose Futterproben bestellen",
+            "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/b6/70/a4/b670a40c-cf75-61fd-d333-14fba9d100fa/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png",
+            "description": "Schnappen Sie sich zwei kostenlose Josera Hundefutterproben und einen 5 €-Gutschein!"
         }
     }
 }

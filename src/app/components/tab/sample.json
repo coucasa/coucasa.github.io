@@ -1,5 +1,17 @@
 [
     {
+        "key": "checkforpet",
+        "webId": "https://www.checkforpet.de/futtercheck"
+    },
+    {
+        "key": "joseracat",
+        "webId": "https://www.josera-katzenfutter-probe.de"
+    },
+    {
+        "key": "joseradog",
+        "webId": "https://www.josera-hundefutter-probe.de"
+    },
+    {
         "key": "sebamed",
         "webId": "https://www.sebamed.de/kontakt/formular"
     }

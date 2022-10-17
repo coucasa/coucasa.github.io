@@ -66,6 +66,12 @@ function reconciliate() {
       item.title = 'sebamed';
       item.description = 'Probenanforderung über Formular mit Angabe eines Produktwunsches und aussagekräftiger Nachricht';
     }
+    if (d.key == 'joseracat') {
+      item.description = 'Schnappen Sie sich zwei kostenlose Josera Katzenutterproben und einen 5 €-Gutschein!';
+    }
+    if (d.key == 'joseradog') {
+      item.description = 'Schnappen Sie sich zwei kostenlose Josera Hundefutterproben und einen 5 €-Gutschein!';
+    }
   }
   fs.writeFileSync("src/assets/i18n/de.json", JSON.stringify(de, undefined, 4), 'utf-8');
 }
