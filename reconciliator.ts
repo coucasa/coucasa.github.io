@@ -72,6 +72,9 @@ function reconciliate() {
     if (d.key == 'joseradog') {
       item.description = 'Schnappen Sie sich zwei kostenlose Josera Hundefutterproben und einen 5 €-Gutschein!';
     }
+    if (d.key == 'mediamarkttestpiloten') {
+      item.title = 'MediaMarkt - Jetzt Testpilot werden';
+    }
   }
   fs.writeFileSync("src/assets/i18n/de.json", JSON.stringify(de, undefined, 4), 'utf-8');
 }

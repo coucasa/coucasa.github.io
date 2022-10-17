@@ -344,6 +344,11 @@
             "title": "JOSERA Hundefutter Proben – Jetzt kostenlose Futterproben bestellen",
             "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/b6/70/a4/b670a40c-cf75-61fd-d333-14fba9d100fa/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png",
             "description": "Schnappen Sie sich zwei kostenlose Josera Hundefutterproben und einen 5 €-Gutschein!"
+        },
+        "mediamarkttestpiloten": {
+            "title": "MediaMarkt - Jetzt Testpilot werden",
+            "image": "https://www.mediamarkt.de/public/manifest/favicon-Media-32x32.png",
+            "description": "Die innovativsten Produkte namhafter Hersteller ausgiebig zuhause testen – kommen Sie an Bord und heben Sie als Testpilot ab."
         }
     }
 }

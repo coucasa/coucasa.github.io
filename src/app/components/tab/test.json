@@ -17,6 +17,9 @@
         "appStoreId": "influenster-reviews-deals/id917701230",
         "register": "https://www.influenster.com/r/9910598",
         "webId": "https://www.influenster.com/"
+    }, {
+        "key": "mediamarkttestpiloten",
+        "webId": "https://www.mediamarkt.de/de/campaign/testpiloten"
     },
     {
         "key": "reweprodukttests",

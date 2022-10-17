@@ -79,7 +79,7 @@ async function update() {
     { key: "web", getUrl: function (id) { return id }, updateProperties: updateWebsiteProperties }
   ];
   let data = [];
-  for (let category of require("./src/app/services/category.json").slice(4, 5)) {
+  for (let category of require("./src/app/services/category.json").slice(3, 4)) {
     let items = require("./src/app/components/tab/" + category.key + ".json");
     for (let item of items) {
       let d = { "key": item.key };
