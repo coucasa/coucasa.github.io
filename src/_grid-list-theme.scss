@@ -7,70 +7,69 @@
   $foreground: map.get($config, foreground);
   $background: map.get($config, background);
 
-  .home mat-grid-tile,
-  .tab mat-grid-tile {
-    background: mat.get-color-from-palette($background, app-bar);
+  .mat-app-background {
+    .mat-grid-tile {
+      background: mat.get-color-from-palette($background, app-bar);
 
-    .mat-grid-tile-header {
-      img {
+      .mat-grid-tile-header {
+        background: rgba(0, 0, 0, .1);
+        color: mat.get-color-from-palette($foreground, text);
+
+        img {
+          margin-right: 16px;
+        }
+
+        .mat-icon {
+          font-size: 24px;
+          margin-right: 16px;
+        }
+      }
+
+      .mat-grid-tile-text {
+        margin-left: 16px;
         margin-right: 16px;
       }
 
-      .mat-icon {
-        font-size: 24px;
-        margin-right: 16px;
+      .mat-grid-tile-footer {
+        background: none;
+
+        a {
+          color: mat.get-color-from-palette($foreground, text);
+
+          margin-right: 16px;
+
+
+          background-color: mat.get-color-from-palette($accent);
+          border-radius: 4px;
+          position: relative;
+
+          &.apple,
+          &.play {
+            padding-left: 38px;
+          }
+
+          padding-left: 6px;
+          padding-right: 6px;
+
+          .store,
+          .ratings {
+            line-height: 18px;
+          }
+
+          .ratings {
+            font-size: 10px;
+          }
+
+          &,
+          &:visited,
+          &:-webkit-any-link {
+            text-decoration: none;
+            color: mat.get-color-from-palette($foreground, text);
+          }
+        }
       }
     }
   }
-
-  .home .mat-grid-tile .mat-grid-tile-header {
-    background: rgba(0, 0, 0, .1);
-    color: mat.get-color-from-palette($foreground, text);
-  }
-
-  .tab .mat-grid-tile .mat-grid-tile-header {
-    background: rgba(0, 0, 0, .1);
-    color: mat.get-color-from-palette($foreground, text);
-  }
-
-  .tab .mat-grid-tile .mat-grid-tile-footer {
-    background: none;
-    a {
-      color: mat.get-color-from-palette($foreground, text);
-      margin-right: 16px;
-    }
-  }
-
-  .mat-grid-tile-text {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .mat-grid-tile .mat-grid-tile-footer a.apple,
-  .mat-grid-tile .mat-grid-tile-footer a.play {
-    background-color: mat.get-color-from-palette($accent);
-    border-radius: 4px;
-    position: relative;
-    padding-left: 38px;
-    padding-right: 6px;
-
-    .store,
-    .ratings {
-      line-height: 18px;
-    }
-
-    .ratings {
-      font-size: 10px;
-    }
-
-    &,
-    &:visited,
-    &:-webkit-any-link {
-      text-decoration: none;
-      color: mat.get-color-from-palette($foreground, text);
-    }
-  }
-
 }
 
 @mixin theme($theme) {

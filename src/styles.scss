@@ -34,17 +34,12 @@ body {
 }
 
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-header div {
+.header div {
   text-align: center;
   margin-left: 16px;
   margin-right: 16px;
-}
-
-.container {
-  height: 100%;
-  overflow-y: auto;
 }

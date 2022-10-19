@@ -1,22 +1,20 @@
-<div class="container home">
-    <header>
-        <div>
-            <h1>{{'title' | translate}}</h1>
-            <h2>{{'subtitle' | translate}}</h2>
-            <p>{{'description' | translate}}</p>
-            <a mat-raised-button color="accent" href="https://m.facebook.com/groups/850752598298586">
-                <mat-icon>groups</mat-icon><span>Zur Gruppe</span>
-            </a>
-        </div>
-    </header>
-    <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
-        [style.margin]="gutter + 'px ' + margin + 'px ' + gutter + 'px ' + margin + 'px'">
-        <mat-grid-tile *ngFor="let category of categories" [routerLink]="category.link">
-            <mat-grid-tile-header>
-                <mat-icon>{{category.icon}}</mat-icon><span>{{'categories.' + category.key + '.label' |
-                    translate}}</span>
-            </mat-grid-tile-header>
-            <p class="mat-grid-tile-text">{{'categories.' + category.key + '.description' | translate}}</p>
-        </mat-grid-tile>
-    </mat-grid-list>
+<div class="header">
+    <div>
+        <h1>{{'title' | translate}}</h1>
+        <h2>{{'subtitle' | translate}}</h2>
+        <p>{{'description' | translate}}</p>
+        <a mat-raised-button color="accent" href="https://m.facebook.com/groups/850752598298586">
+            <mat-icon>groups</mat-icon><span>Zur Gruppe</span>
+        </a>
+    </div>
 </div>
+<mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
+    [style.margin]="gutter + 'px ' + margin + 'px ' + gutter + 'px ' + margin + 'px'">
+    <mat-grid-tile *ngFor="let category of categories" [routerLink]="category.link">
+        <mat-grid-tile-header>
+            <mat-icon>{{category.icon}}</mat-icon><span>{{'categories.' + category.key + '.label' |
+                translate}}</span>
+        </mat-grid-tile-header>
+        <p class="mat-grid-tile-text">{{'categories.' + category.key + '.description' | translate}}</p>
+    </mat-grid-tile>
+</mat-grid-list>

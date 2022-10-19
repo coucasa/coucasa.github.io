@@ -1,40 +1,42 @@
-<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+<div [ngClass]="{'dark-theme': isDarkTheme | async, 'theme': true}">
   <div class="mat-app-background">
-    <mat-toolbar fxLayout="column">
-      <mat-toolbar-row>
-        <div fxFlex fxLayoutAlign="flex-start center">
-          <a mat-button routerLink="">
-            <mat-icon>redeem</mat-icon>
-            <span>
-              CouCaSa
-            </span>
-          </a>
-        </div>
-        <div fxFlex fxLayoutAlign="center center">
-          <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
-            <mat-icon>contrast</mat-icon>
-          </mat-slide-toggle>
-        </div>
-        <div fxFlex fxLayoutAlign="flex-end center">
-          <a mat-button *ngIf="!(isDarkTheme| async)" href="https://github.com/coucasa/dashboard"><img
-              src="assets/GitHub-Mark-32px.png" height="24px" /></a>
-          <a mat-button *ngIf="isDarkTheme | async" href="https://github.com/coucasa/dashboard"><img
-              src="assets/GitHub-Mark-Light-32px.png" height="24px" /></a>
-        </div>
-      </mat-toolbar-row>
-      <mat-toolbar-row fxShow fxHide.lt-sm fxFlex>
-        <nav mat-tab-nav-bar fxFlex>
-          <a mat-tab-link #rla="routerLinkActive" *ngFor="let category of categories" [routerLink]="category.link"
-            routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [active]="rla.isActive" fxFlex
-            matTooltip="{{'categories.' + category.key + '.label' | translate}}">
-            <mat-icon>{{category.icon}}</mat-icon>
-          </a>
-        </nav>
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <div class="content" role="main">
+    <header>
+      <mat-toolbar fxLayout="column">
+        <mat-toolbar-row>
+          <div fxFlex fxLayoutAlign="flex-start center">
+            <a mat-button routerLink="">
+              <mat-icon>redeem</mat-icon>
+              <span>
+                CouCaSa
+              </span>
+            </a>
+          </div>
+          <div fxFlex fxLayoutAlign="center center">
+            <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+              <mat-icon>contrast</mat-icon>
+            </mat-slide-toggle>
+          </div>
+          <div fxFlex fxLayoutAlign="flex-end center">
+            <a mat-button *ngIf="!(isDarkTheme| async)" href="https://github.com/coucasa/dashboard"><img
+                src="assets/GitHub-Mark-32px.png" height="24px" /></a>
+            <a mat-button *ngIf="isDarkTheme | async" href="https://github.com/coucasa/dashboard"><img
+                src="assets/GitHub-Mark-Light-32px.png" height="24px" /></a>
+          </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row fxShow fxHide.lt-sm fxFlex>
+          <nav mat-tab-nav-bar fxFlex>
+            <a mat-tab-link #rla="routerLinkActive" *ngFor="let category of categories" [routerLink]="category.link"
+              routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [active]="rla.isActive" fxFlex
+              matTooltip="{{'categories.' + category.key + '.label' | translate}}">
+              <mat-icon>{{category.icon}}</mat-icon>
+            </a>
+          </nav>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </header>
+    <main>
       <router-outlet></router-outlet>
-    </div>
+    </main>
     <footer>
       <mat-toolbar>
         <div fxShow fxHide.lt-sm fxFlex fxLayoutAlign="center center" class="mat-small">
