@@ -1,0 +1,174 @@
+[
+    {
+        "key": "dmprodukttester",
+        "web": {
+            "og:title": "Produkte testen und bewerten mit dem dm-Produkttester",
+            "og:description": "Gehöre zu den ersten, die neue Produkte ausprobieren und bewerten können. Einfach beim dm-Produkttester anmelden und keinen Test mehr verpassen.",
+            "og:url": "https://produkttester.dm.de",
+            "og:image": "https://d7bim9xdgp4xa.cloudfront.net/static/9abf7cc6559afbb5ebbbac891cfeacd0/assets/bin/img/share.jpg",
+            "images": [
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-57x57.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-60x60.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-72x72.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-76x76.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-114x114.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-120x120.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-144x144.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-152x152.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/apple-touch-icon-180x180.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/favicon-32x32.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/favicon-194x194.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/favicon-96x96.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/android-chrome-192x192.png",
+                "https://d7bim9xdgp4xa.cloudfront.net/favicon-16x16.png"
+            ],
+            "title": "dm Produkttester - Jetzt neue Produkte testen"
+        }
+    },
+    {
+        "key": "htc",
+        "web": {
+            "description": "Hier findest du Tausende von Produktbewertungen und Erfahrungsberichte. Tritt dem Club bei und erhalte Zugang zu exklusiven Produkttests – es ist völlig kostenlos.",
+            "keywords": "",
+            "og:title": "Kostenlose Produkte sowie echte Bewertungen und Erfahrungsberichte | Home Tester Club",
+            "og:description": "Hier findest du Tausende von Produktbewertungen und Erfahrungsberichte. Tritt dem Club bei und erhalte Zugang zu exklusiven Produkttests – es ist völlig kostenlos.",
+            "og:image": "https://d358gv0xx6s8do.cloudfront.net/img3/Purple_Smile.jpg",
+            "og:url": "http://www.hometesterclub.com/de/de",
+            "images": [
+                "https://www.hometesterclub.com/images/favicon.ico",
+                "https://www.hometesterclub.com/images/apple-icon-144x144.png",
+                "https://www.hometesterclub.com/images/favicon-48x48.png",
+                "https://www.hometesterclub.com/images/favicon-96x96.png"
+            ],
+            "title": "Kostenlose Produkte sowie echte Bewertungen und Erfahrungsberichte | Home Tester Club"
+        }
+    },
+    {
+        "key": "fragteamclean",
+        "web": {
+            "description": "Als Mitglied bei Frag Team Clean profitierst du von exklusiven Vorteilen: Produkttests, Coupons, Gewinnspiele und Antworten auf alle haushaltsrelevanten Fragen!",
+            "og:image": "https://dm.henkel-dam.com/is/image/henkel/Image-ME-header-16x5",
+            "og:title": "Werde Mitglied",
+            "og:url": "https://www.frag-team-clean.de/werde-mitglied.html",
+            "og:description": "Werde Mitglied",
+            "images": [
+                "https://dm.henkel-dam.com/is/image/henkel/favicon_auv?fmt=png-alpha&qlt=90&wid=16",
+                "https://dm.henkel-dam.com/is/image/henkel/favicon_auv?fmt=png-alpha&qlt=90&wid=128",
+                "https://dm.henkel-dam.com/is/image/henkel/favicon_auv?fmt=png-alpha&qlt=90&wid=196"
+            ],
+            "title": "Werde Mitglied und profitiere sofort | Frag Team Clean"
+        }
+    },
+    {
+        "key": "influenster",
+        "playStore": {
+            "og:url": "https://play.google.com/store/apps/details?id=com.influenster&hl=de&gl=DE",
+            "og:title": "Influenster – Apps bei Google Play",
+            "og:description": "Must-Have App, wenn Sie nach produkten und den exklusivsten Deals suchen",
+            "description": "Must-Have App, wenn Sie nach produkten und den exklusivsten Deals suchen",
+            "og:image": "https://play-lh.googleusercontent.com/zFLHV1v-M22mEpzjx5UQUTCAyQXdv-KU7J02KeYhArHyHLmh2dH47ZDG6EJthp2dloU",
+            "rating": "4,1 • 34.200"
+        },
+        "appStore": {
+            "keywords": "Influenster: Reviews & Deals, Influenster, Shopping,Lifestyle, ios-apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes",
+            "description": "Lies Rezensionen, vergleiche Kundenbewertungen, sieh dir Screenshots an und erfahre mehr über Influenster: Reviews & Deals. Lade Influenster: Reviews & Deals und genieße die App auf deinem iPhone, iPad und iPod touch.",
+            "og:title": "‎Influenster: Reviews & Deals",
+            "og:description": "‎Personalisierte Produktempfehlungen, Millionen hilfreiche und ehrliche Bewertungen, die Chance auf Produktproben und noch so viel mehr - finden Sie Ihr nächstes Lieblingsprodukt mit Influenster.\n\nEs geht ganz einfach: Laden Sie die App herunter, verraten Sie uns Ihre Interessen und wir finden die…",
+            "og:url": "https://apps.apple.com/de/app/influenster-reviews-deals/id917701230",
+            "og:image": "https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/79/c0/a0/79c0a0dc-15a0-8f87-1deb-8bce42ba238f/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+            "rating": "4,6 • 212",
+            "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/79/c0/a0/79c0a0dc-15a0-8f87-1deb-8bce42ba238f/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
+        },
+        "web": {
+            "description": "Influenster is your source for honest product reviews. Discover new products, read trending news, watch tutorials, and shop and share your favorite products.",
+            "images": [
+                "https://cdn.influenster.com/static/img/favicon-i.ico?v=3",
+                "https://cdn.influenster.com/static/img/favicon-i.ico?v=3",
+                "https://cdn.influenster.com/static/img/favicon-i-180x180.png?v=3",
+                "https://cdn.influenster.com/static/img/favicon-i-32x32.png?v=3",
+                "https://cdn.influenster.com/static/img/favicon-i-16x16.png?v=3"
+            ],
+            "title": "Product Reviews, Q&A, News, and Exclusive Offers | Influenster"
+        }
+    },
+    {
+        "key": "mediamarkttestpiloten",
+        "web": {
+            "description": "Die innovativsten Produkte namhafter Hersteller ausgiebig zuhause testen – kommen Sie an Bord und heben Sie als Testpilot ab | Nur bei MediaMarkt",
+            "keywords": "",
+            "og:title": "Jetzt Testpilot werden ",
+            "og:description": "Die innovativsten Produkte namhafter Hersteller ausgiebig zuhause testen – kommen Sie an Bord und heben Sie als Testpilot ab |",
+            "og:image": "",
+            "og:url": "https://www.mediamarkt.de/de/campaign/testpiloten",
+            "images": [
+                "https://www.mediamarkt.de/public/manifest/favicon-Media-32x32.png"
+            ],
+            "title": "Jetzt Testpilot werden | MediaMarkt"
+        }
+    },
+    {
+        "key": "reweprodukttests",
+        "web": {
+            "description": "REWE Produkttests bieten die Möglichkeit, neue und beliebte Artikel wie Lebensmittel, Getränke und Drogerieartikel gratis zu testen und zu bewerten",
+            "images": [
+                "https://produkttests.rewe.de/icons/favicon-16x16.png",
+                "https://produkttests.rewe.de/icons/favicon-32x32.png",
+                "https://produkttests.rewe.de/icons/safari-pinned-tab.svg",
+                "https://produkttests.rewe.de/icons/apple-touch-icon.png"
+            ],
+            "title": "REWE Produkttests. Neue Produkte und Lebensmittel gratis testen!"
+        }
+    },
+    {
+        "key": "sampleo",
+        "playStore": {
+            "og:url": "https://play.google.com/store/apps/details?id=com.sampleo&hl=de&gl=DE",
+            "og:title": "Sampleo – Apps bei Google Play",
+            "og:description": "Testen Sie Produkte, werden Sie Markenbotschafter und geben Sie Ihre Meinung ab!",
+            "description": "Testen Sie Produkte, werden Sie Markenbotschafter und geben Sie Ihre Meinung ab!",
+            "og:image": "https://play-lh.googleusercontent.com/zfkU3VVo0aA6DZBaplCGIyRs7HZE_191Ujvr-S0TesKz7YxtO03zy_4O7-r87Up8RaI",
+            "rating": "Keine Bewertung"
+        },
+        "appStore": {
+            "keywords": "Sampleo, Sampleo, Unterhaltung, ios-apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes",
+            "description": "Lies Rezensionen, vergleiche Kundenbewertungen, sieh dir Screenshots an und erfahre mehr über Sampleo. Lade Sampleo und genieße die App auf deinem iPhone, iPad und iPod touch.",
+            "og:title": "‎Sampleo",
+            "og:description": "‎Entdecken Sie Marken.\nSampleo bietet Ihnen eine Vorschau auf die neuen Produkte und Bestseller der größten Beauty-, Food- und Entertainment-Marken… kostenlos!\n\nWie es funktioniert ?\nRegistrieren Sie sich schnell.\nBlättern Sie, wenden Sie sich an und warten Sie auf das Ergebnis Ihrer Auswahl.\nAusgewä…",
+            "og:url": "https://apps.apple.com/de/app/sampleo/id1186287708",
+            "og:image": "https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/21/9b/0a/219b0a89-7d5b-6406-e3ed-fa0e11763b0f/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+            "rating": "4,5 • 4",
+            "image": "https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/21/9b/0a/219b0a89-7d5b-6406-e3ed-fa0e11763b0f/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
+        },
+        "web": {
+            "description": "Sampleo organisiert Influencer-Kampagnen mit anerkannten Marken. Machen Sie mit! Erhalten Sie Ihr Produkt und geben Sie Ihre Erfahrungen weiter.",
+            "og:image": "https://www.sampleo.com/img/banner-sampleo-default.png",
+            "images": [
+                "https://www.sampleo.com/favicon/favicon.ico",
+                "https://www.sampleo.com/favicon/favicon.png",
+                "https://www.sampleo.com/favicon/favicon-16x16.png",
+                "https://www.sampleo.com/favicon/favicon-32x32.png",
+                "https://www.sampleo.com/favicon/apple-touch-icon.png",
+                "https://www.sampleo.com/favicon/android-chrome-192x192.png",
+                "https://www.sampleo.com/favicon/android-chrome-256x256.png"
+            ],
+            "title": "Startseite"
+        }
+    },
+    {
+        "key": "trnd",
+        "web": {
+            "description": "Bei trnd kannst Du neue Produkte ausprobieren, Deine Erfahrungen mit Herstellern, Freunden, Followern teilen und Erfahrungen in der Zusammenarbeit mit bekannten Marken machen. ",
+            "keywords": "trnd, lieblingsmarke, marketing, mitmachen, produkte, neu, influencer, marken",
+            "og:title": "trnd: Neue Produkte kennenlernen & mit Marken zusammenarbeiten",
+            "og:url": "https://www.trnd.com/de/",
+            "og:description": "Bei trnd kannst Du neue Produkte ausprobieren, Deine Erfahrungen mit Herstellern, Freunden, Followern teilen und Erfahrungen in der Zusammenarbeit mit bekannten Marken machen. ",
+            "og:image": "https://www.trnd.com/de//trnd-home.jpg",
+            "images": [
+                "https://www.trnd.com/images/themes/trnd/apple-touch-icon.png?version=v1.733.0",
+                "https://www.trnd.com/images/themes/trnd/apple-touch-icon.png?version=v1.733.0",
+                "https://www.trnd.com/de/favicon"
+            ],
+            "title": "trnd: Neue Produkte kennenlernen & mit Marken zusammenarbeiten"
+        }
+    }
+]
