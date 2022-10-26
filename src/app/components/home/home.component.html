@@ -10,7 +10,7 @@
 </div>
 <mat-grid-list [cols]="cols" [gutterSize]="gutter + 'px'" [rowHeight]="rowHeight + 'px'"
     [style.margin]="gutter + 'px ' + margin + 'px ' + gutter + 'px ' + margin + 'px'">
-    <mat-grid-tile *ngFor="let category of categories" [routerLink]="category.link">
+    <mat-grid-tile *ngFor="let category of categories; let i = index" [routerLink]="category.link" [style.background]="colors[i%colors.length]">
         <mat-grid-tile-header>
             <mat-icon>{{category.icon}}</mat-icon><span>{{'categories.' + category.key + '.label' |
                 translate}}</span>
