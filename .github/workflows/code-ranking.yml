@@ -21,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Setup Chrome
-      run: chrome --version
+      run: which chrome
 
     - name: Update
       run: node code-ranking-updater.js
